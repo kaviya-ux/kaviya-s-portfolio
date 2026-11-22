@@ -1,0 +1,113 @@
+export type Theme = 'dark' | 'light'
+
+export const copy = {
+  seo: {
+    title: 'Kaviya S — Full Stack Developer | Python, Django, React & Node.js',
+    description:
+      'Kaviya S is a Full Stack Developer in Chennai, India. She builds production-ready web apps with Python, Django, React, Node.js and PostgreSQL/MySQL, with JWT REST APIs and responsive interfaces.',
+  },
+  about: {
+    alt: 'Professional portrait of Kaviya S',
+    heading: 'About',
+    subheading: 'Hello, I’m Kaviya.',
+    badges: ['Chennai, India', 'Full Stack Developer', 'Python & React'],
+    intro: [
+      'I’m a Full Stack Developer from Chennai with a B.C.A. (8.8 CGPA) and five months of intensive, hands-on full stack training. I build web applications end to end with Python, Django, React and Node.js, from normalized database schemas and JWT-secured REST APIs to responsive, mobile-first interfaces.',
+      'I enjoy turning real operational workflows (tracking applications, triaging support tickets, booking appointments) into clean, deployed software. I break each problem into small features, build and test step by step, and keep the code easy to read and debug.',
+      'I’m looking for a junior full stack, frontend or backend role on a team where I can keep shipping and learning.',
+    ],
+    resumeCta: 'View resume',
+  },
+  contact: {
+    heading: 'Contact',
+    subheading: 'Let’s connect.',
+    text: 'Open to full-time, internship and junior roles in full stack, frontend and backend development, and open to relocation and remote work. Reach out by email, phone or WhatsApp.',
+    emailLabel: 'Email',
+    phoneLabel: 'Phone / WhatsApp',
+    locationLabel: 'Location',
+    name: 'Name (optional)',
+    email: 'Email address',
+    message: 'Your message',
+    submit: 'Send message',
+    sending: 'Sending…',
+    success: 'Thank you, your message has been submitted.',
+    successDetail:
+      'I will read your message and reply to the email address you provided.',
+    viewProjects: 'View my projects',
+    sendAnother: 'Send another message',
+    error: 'Sending failed. Please try again or email me directly.',
+    captcha:
+      'Allow hCaptcha, then complete the anti-spam check before sending.',
+    privacy:
+      'Your message is sent through Web3Forms. hCaptcha detects bots and may use cookies after you allow it. You can email instead without enabling it.',
+    privacyLink: 'Privacy policy',
+    captchaError:
+      'The anti-spam check encountered an error. Retry the check or email me directly.',
+    captchaRetry: 'Retry the anti-spam check',
+    captchaLoad: 'I allow hCaptcha to load',
+    captchaWithdraw: 'Withdraw permission and reload (clears your draft)',
+    captchaPrivacyLink: 'hCaptcha privacy policy',
+    emailAlternative: 'Or email me directly:',
+  },
+  footer: {
+    brand: 'Kaviya S - Full Stack Developer',
+    copyright: '© 2026 Kaviya S. Built with React & TypeScript.',
+    navHeading: 'Navigation',
+    linksHeading: 'Links',
+    legalHeading: 'Legal',
+  },
+  hero: {
+    name: 'Kaviya S',
+    role: 'Full Stack Developer · Chennai, India',
+    subtitle:
+      'Full Stack Developer (B.C.A., 8.8 CGPA) building production-ready web applications with Python, Django, React, Node.js, and PostgreSQL/MySQL. Experienced in designing normalized databases, RESTful JWT APIs, and responsive, mobile-first interfaces.',
+    projectsCta: 'View live projects',
+    resumeCta: 'View resume',
+    contactCta: 'Get in touch',
+    statsLabel: 'Hero stats',
+    statLabels: {
+      projects: 'Live full stack apps deployed',
+      cgpa: 'B.C.A. CGPA',
+      training: 'Months of intensive full stack training',
+    },
+  },
+  nav: {
+    services: 'Services',
+    home: 'Home',
+    projects: 'Projects',
+    stack: 'Stack',
+    about: 'About',
+    contact: 'Contact',
+    resume: 'Resume',
+    mainLabel: 'Main navigation',
+    externalLabel: 'External links',
+    homeLabel: 'Kaviya S - home',
+    openMenuLabel: 'Open menu',
+    closeMenuLabel: 'Close menu',
+    themeDarkLabel: 'Switch to dark theme',
+    themeLightLabel: 'Switch to light theme',
+    resumeLabel: 'View Kaviya S’s resume on Google Drive',
+  },
+  projects: {
+    heading: 'Projects',
+    text: 'Three full stack applications, each built with a REST API, a relational database and a responsive React interface, with public source code on GitHub.',
+    personalHeading: 'Featured projects',
+    jumpLabel: 'Jump to another project category',
+    showAllLabel: 'Show all projects',
+    hideExtraLabel: 'Hide extra projects',
+    ctaText: 'Hiring for a full stack role?',
+    ctaLink: 'Get in touch',
+    viewProject: 'View live demo of',
+    github: 'GitHub',
+    view: 'Live demo',
+  },
+  services: {
+    heading: 'What I build',
+  },
+  skipLink: 'Skip to content',
+  stack: {
+    heading: 'Stack & skills',
+    text: 'The tools I use to design, build, test and deploy full stack applications.',
+  },
+  topButtonLabel: 'Back to top',
+} as const

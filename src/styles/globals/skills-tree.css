@@ -1,0 +1,96 @@
+.skills-tree {
+  margin-top: 5rem;
+}
+
+.skills-tree__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skills-tree__trigger {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid var(--outline-strong);
+  background: transparent;
+}
+
+.skills-tree__trigger:hover .skills-tree__label {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+}
+
+.skills-tree__node--depth-0 > .skills-tree__trigger {
+  padding-top: 0;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.skills-tree__node--depth-1 > .skills-tree__trigger,
+.skills-tree__node--depth-2 > .skills-tree__trigger {
+  grid-template-columns: 4rem minmax(0, 1fr) auto;
+}
+
+.skills-tree__node--depth-1 > .skills-tree__trigger {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.skills-tree__node--depth-2 > .skills-tree__trigger {
+  padding: 1rem 0;
+  border-bottom-color: var(--outline);
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.skills-tree__index {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
+.skills-tree__sign {
+  min-width: 1rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.skills-tree__list--children .skills-tree__list--children {
+  padding-left: 4rem;
+}
+
+.skills-tree__content:not([hidden]) {
+  animation: skillsTreeReveal 220ms var(--ease-out) both;
+}
+
+.skills-tree__keywords {
+  padding: 0.75rem 0 1.25rem 4rem;
+  margin: 0;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--outline);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+.skills-tree__node--depth-2 > .skills-tree__trigger[aria-expanded="true"] {
+  border-bottom-color: transparent;
+}

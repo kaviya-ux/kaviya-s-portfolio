@@ -1,0 +1,333 @@
+.projects-features {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.projects-features__cards {
+  display: grid;
+  grid-column: 4 / -1;
+  gap: 6rem;
+  min-width: 0;
+}
+
+.project-card--feature {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--outline);
+}
+
+.project-card__index {
+  margin: 0;
+  font-size: 12rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+  font-variant-numeric: tabular-nums;
+}
+
+.project-card__total {
+  margin-left: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  vertical-align: top;
+}
+
+.projects-features__index {
+  container-type: inline-size;
+  position: sticky;
+  top: 6rem;
+  grid-column: 1 / span 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.projects-features__index .project-card__total {
+  margin: 0;
+}
+
+.projects-features__window {
+  display: block;
+  flex-shrink: 0;
+  /* Fit both digits to their column; overflow only masks the vertical animation. */
+  font-size: min(1em, 80cqi);
+  height: 1em;
+  overflow: hidden;
+}
+
+.projects-features__track,
+.projects-features__number {
+  display: block;
+}
+
+.projects-features__track {
+  transition: transform 450ms var(--ease-out);
+}
+
+.project-card--feature .project-card__index {
+  display: none;
+}
+
+.project-card--compact .project-card__index {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.project-card--compact .project-card__total {
+  display: inline;
+  margin: 0 0 0 0.75rem;
+}
+
+.project-card__media {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--outline);
+  background: var(--surface);
+}
+
+.project-card__media picture,
+.project-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card__media img {
+  object-fit: cover;
+}
+
+.project-card__media:focus-visible {
+  outline-offset: -4px;
+}
+
+.project-card__body {
+  display: grid;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.project-card--feature .project-card__body {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2.5rem;
+}
+
+.project-card__meta {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-card h4 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.project-card--compact h4 {
+  font-size: 1.5rem;
+}
+
+.project-card__description {
+  margin: 1rem 0 0;
+}
+
+.project-card__details {
+  display: grid;
+  align-content: start;
+  gap: 1.5rem;
+}
+
+.project-card--feature .project-card__details {
+  justify-items: end;
+}
+
+.project-card--feature .chip-list {
+  justify-content: flex-end;
+}
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-card__link {
+  gap: 0.6rem;
+  min-height: 2.75rem;
+  padding: 0.65rem 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4rem 2.5rem;
+}
+
+.projects-grid[hidden] {
+  display: none;
+}
+
+.projects-grid:not(:empty) {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--outline);
+}
+
+.projects-section__more {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
+.projects-toggle {
+  max-width: 100%;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.projects-toggle__sign {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.projects-section__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  margin-top: 6rem;
+  border-top: 1px solid var(--outline);
+  border-bottom: 1px solid var(--outline);
+}
+
+.projects-section__cta p {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.projects-group + .projects-group {
+  margin-top: 6rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--outline);
+}
+
+.projects-group__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.projects-group__title {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.projects-group__count {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.projects-group__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: none;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.projects-group__toggle:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.projects-group__chevron {
+  line-height: 1;
+}
+
+.projects-group__toggle[aria-expanded="true"] .projects-group__chevron {
+  transform: rotate(180deg);
+}
+
+/* Above the sticky index and first card, which come later in the group. */
+.projects-group__jumps {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  width: max-content;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--outline-strong);
+  background: var(--surface);
+  list-style: none;
+}
+
+.projects-group__jump {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  font-size: 0.75rem;
+  justify-content: flex-start;
+}
+
+.project-card__facts {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--outline);
+}
+
+.project-card__facts div {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.project-card__facts dt {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-card__facts dd {
+  margin: 0;
+}

@@ -1,0 +1,34 @@
+.stack-list {
+  margin: 0;
+  border-top: 1px solid var(--outline-strong);
+}
+
+.stack-list__row {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--outline-strong);
+}
+
+.stack-list__row dt {
+  grid-column: 1 / span 3;
+  padding-top: 0.35rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.stack-list__row dd {
+  grid-column: 4 / -1;
+  margin: 0;
+}
+
+.stack-section .chip {
+  border-color: var(--outline-strong);
+  color: var(--text);
+  background: var(--background);
+}
