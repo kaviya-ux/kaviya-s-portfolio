@@ -2,7 +2,7 @@ import { spawnSync } from 'node:child_process'
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { afterEach, describe, expect, it } from 'vitest'
 
 const projectRoot = fileURLToPath(new URL('..', import.meta.url))
@@ -47,7 +47,11 @@ async function runCommand(
 
   const result = spawnSync(
     process.execPath,
-    ['--import', fixturePath, join(root, 'scripts/update-hero-stats.mjs')],
+    [
+      '--import',
+      pathToFileURL(fixturePath).href,
+      join(root, 'scripts/update-hero-stats.mjs'),
+    ],
     {
       env,
       encoding: 'utf8',

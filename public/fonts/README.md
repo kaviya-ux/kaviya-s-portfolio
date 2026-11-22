@@ -1,12 +1,12 @@
-# Polices auto-hébergées
+# Self-hosted fonts
 
-Téléchargées le 30 octobre 2026, sans modification des binaires WOFF2.
-Les déclarations et plages Unicode reproduisent les réponses Google Fonts CSS2
-(Schibsted Grotesk normal/italique variable 400–700 ; IBM Plex Mono normal 400/500).
-IBM Plex Mono reste réservé aux écrans de plus de 760 px.
-Licences SIL OFL 1.1 distribuées dans ce dossier.
+Downloaded on October 30, 2026; the WOFF2 binaries are unmodified.
+The font declarations and Unicode ranges reproduce the Google Fonts CSS2
+responses (Schibsted Grotesk variable roman/italic 400–700; IBM Plex Mono roman 400/500).
+IBM Plex Mono is only used at viewport widths above 760 px.
+The SIL OFL 1.1 licenses are included in this directory.
 
-Sources :
+Sources:
 
 - schibstedgrotesk-Jqz_5SSPQuCQF3t8uOwiUL-taUTtap9DWyYpchFP.woff2: https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz_5SSPQuCQF3t8uOwiUL-taUTtap9DWyYpchFP.woff2 ; SHA-256 30f8012bb4c18faf4ab50cfe0a0ff11d5a7b89d9cb27acd73d84afa15444050a
 - schibstedgrotesk-Jqz_5SSPQuCQF3t8uOwiUL-taUTtap9DWygpcg.woff2: https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz_5SSPQuCQF3t8uOwiUL-taUTtap9DWygpcg.woff2 ; SHA-256 4c72510c1a185a7b7ae2c9e402fbe531a58b74c95f4d2450f4d58482213c65f7
